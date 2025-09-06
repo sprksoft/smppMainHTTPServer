@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-{{ if eq .Mode "dark" }}dark{{ else }}light{{ end }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,27 +19,27 @@
       rel="stylesheet"
     />
     {{ if eq .Page "index" }}
-    <link rel="preload" as="image" href="/media/previewDarkSands.webp" />
-    <link rel="preload" as="image" href="/media/previewMidnightSapphire.webp" />
+    <link rel="preload" as="image" href="/media/previewDarkSands.jpg" />
+    <link rel="preload" as="image" href="/media/previewMidnightSapphire.jpg" />
     <link
       rel="preload"
       as="image"
-      href="/media/previewFluorescentGalaxy.webp"
+      href="/media/previewFluorescentGalaxy.jpg"
     />
     {{ if eq .IsMobile false}}
     <link
       rel="preload"
       as="image"
-      href="/media/backgroundMidnightSapphire.webp"
+      href="/media/backgroundMidnightSapphire.jpg"
     />
-    <link rel="preload" as="image" href="/media/backgroundDarkSands.webp" />
+    <link rel="preload" as="image" href="/media/backgroundDarkSands.jpg" />
     <link
       rel="preload"
       as="image"
-      href="/media/backgroundFluorescentGalaxy.webp"
+      href="/media/backgroundFluorescentGalaxy.jpg"
     />
-    <link rel="preload" as="image" href="/media/backgroundRubyEclipse.webp" />
-    <link rel="preload" as="image" href="/media/backgroundCherryHaze.webp" />
+    <link rel="preload" as="image" href="/media/backgroundRubyEclipse.jpg" />
+    <link rel="preload" as="image" href="/media/backgroundCherryHaze.jpg" />
     {{ end }}
     <link rel="preload" as="image" href="/media/previewPlanner1.webp" />
     <link rel="preload" as="image" href="/media/previewDelijn.webp" />
@@ -87,7 +87,7 @@
               <a href="/guide" class="top-nav-menu-card take-off-card">
                 <div>
                   <span class="top-nav-menu-card-title"
-                    >Quick Start Guide 🚀</span
+                    >Quick Start Guide <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg></span
                   >
                   <span class="top-nav-menu-card-description"
                     >Step-by-step instructions to set up and configure
@@ -124,13 +124,13 @@
               <!-- Right Column -->
               <div style="display: flex; flex-direction: column; gap: 0.2rem">
                 <a href="/products" class="top-nav-menu-card">
-                  <span class="top-nav-menu-card-title">Products 🎁</span>
+                  <span class="top-nav-menu-card-title">Products <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-gift"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M12 8l0 13" /><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" /><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" /></svg></span>
                   <span class="top-nav-menu-card-description"
                     >Explore our different products</span
                   >
                 </a>
                 <a href="/roadmap" class="top-nav-menu-card">
-                  <span class="top-nav-menu-card-title">Roadmap 🚧</span>
+                  <span class="top-nav-menu-card-title">Roadmap <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-barrier-block"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 21a1 1 0 0 1 0 -2h1v-2h-8v2h1a1 1 0 0 1 0 2h-4a1 1 0 0 1 0 -2h1v-2h-1a2 2 0 0 1 -2 -2v-7a2 2 0 0 1 2 -2h1v-1a1 1 0 1 1 2 0v1h8v-1a1 1 0 0 1 2 0v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-1v2h1a1 1 0 0 1 0 2zm-2.086 -13l-7 7h4.17l6.916 -7zm6.086 2.914l-4.086 4.086h4.086zm-10.916 -2.914h-3.084v3.084z" /></svg></span>
                   <span class="top-nav-menu-card-description"
                     >Discover upcoming features and our development
                     timeline</span
@@ -174,7 +174,8 @@
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                    /></svg
+                    />
+                  </svg
                 ></span>
                 <span class="top-nav-menu-card-description"
                   >Access source code, report issues, and contribute to
@@ -188,351 +189,382 @@
               >
                 <span class="top-nav-menu-card-title"
                   >Discord
-                  <svg
-                    width="1.5rem"
-                    height="1.5rem"
-                    style="padding: 2px"
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="Discord-Logo"
-                    viewBox="0 0 127 96"
-                  >
-                    <path
-                      id="Discord-Symbol-Blurple"
-                      style="fill: var(--accent); stroke: var(--accent)"
-                      d="M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z"
-                    /></svg
-                ></span>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-discord"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" /><path d="M7 16.5c3.5 1 6.5 1 10 0" /></svg>
+                </span>
                 <span class="top-nav-menu-card-description"
                   >Join our community for real-time support and
                   discussions</span
                 >
-              </a>
-              <a href="/release-notes" class="top-nav-menu-card">
-                <span class="top-nav-menu-card-title">Release Notes 📃</span>
-                <span class="top-nav-menu-card-description"
-                  >Stay updated with latest changes and version history</span
-                >
-              </a>
-              <a href="/about-us" class="top-nav-menu-card">
-                <span class="top-nav-menu-card-title">About Us ✨</span>
-                <span class="top-nav-menu-card-description"
-                  >Learn about our team, and contributors</span
-                >
-              </a>
-            </div>
-          </button>
-        </div>
+            </a>
+            <a href="/release-notes" class="top-nav-menu-card">
+              <span class="top-nav-menu-card-title">Release Notes <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-notes"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" /><path d="M9 7l6 0" /><path d="M9 11l6 0" /><path d="M9 15l4 0" /></svg></span>
+              <span class="top-nav-menu-card-description"
+                >Stay updated with latest changes and version history</span
+              >
+            </a>
+            <a href="/about-us" class="top-nav-menu-card">
+              <span class="top-nav-menu-card-title">About Us <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-question"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" /><path d="M19 22v.01" /><path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" /></svg></span>
+              <span class="top-nav-menu-card-description"
+                >Learn about our team, and contributors</span
+              >
+            </a>
+          </div>
+        </button>
+      </div>
 
-        <div id="light-dark-selectors" class="outer-top-nav-element">
-          {{ if eq .Mode "dark" }}
-          <a
-            id="light-mode-selector"
-            href="/set-mode?mode=light&redirect={{ .Redirect }}"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
-                stroke="var(--text-color)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-          {{ else }}
-          <a
-            id="dark-mode-selector"
-            href="/set-mode?mode=dark&redirect={{ .Redirect }}"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
-                stroke="var(--text-color)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-          {{ end }}
-          <a
-            href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
-            target="_blank"
-            class="download-button visible-on-desktop"
-          >
-            <svg
-              class="clipped-smpp-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <g>
-                <path
-                  fill="transparent"
-                  d="M512 52.54V111.05L0 414.41V52.54C0 22.37 21.79 0 51.2 0H460.8c29.4 0 51.2 22.37 51.2 52.54z"
-                />
-                <path
-                  fill="transparent"
-                  d="M512 460.8c0 29.4-21.8 51.2-51.2 51.2H51.2C21.79 512 0 490.2 0 460.8v-57L512 108.21z"
-                />
-
-                <path
-                  fill="#fff6ee"
-                  fill-rule="evenodd"
-                  d="M416.88 170.25l-19.96 45.93-59.74-25.95-27.05 62.26-45.92-19.96 27.05-62.26-40.59-17.24c-13.06-4.83-36.28-15.68-68.01-15.68-39.28 0-55.91 20.08-55.91 39.68 0 25.48 19.64 37.24 64.98 54.39 58.94 21.55 87.14 50.46 87.14 97.98 0 53.4-41.3 99.45-128.45 99.45-36.27 0-80.33-13.78-98.97-25.05l20.25-48.61c19.64 11.26 51.02 23.69 82.75 23.69 39.29 0 61.46-18.13 61.46-45.08 0-24.99-17.13-39.68-59.94-54.86-56.41-19.6-92.18-48.5-92.18-96.02 0-54.39 46.35-95.05 120.39-95.05 28.17 0 50.42 4.6 67.22 10.72 20.12 8.14 39.92 17.09 59.83 25.74l27.05-62.26 45.93 19.96-27.06 62.26 59.74 25.95z"
-                />
-                <path
-                  fill="#fff6ee"
-                  fill-rule="evenodd"
-                  d="M473.81 395.89c-18.55-8.05-36.75-14.9-55.29-22.96l-27.35 62.95-46.43-20.18 27.35-62.94-60.4-26.24c6.72-15.49 13.45-30.97 20.18-46.45l60.39 26.24 27.35-62.94 46.44 20.17-27.35 62.95 54.36 23.62z"
-                />
-              </g>
-            </svg>
-
-            <span class="download-button-text">Download</span>
-            <svg
-              class="download-button-arrow"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-            </svg>
-          </a>
-          <button id="mobile-menu-button">
-            <svg
-              width="3rem"
-              height="3rem"
-              viewBox="0 0 24 24"
-              fill="var(--text-color)"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M 5,7 C 5,6.44772 5.44772,6 6,6 h 12 c 0.5523,0 1,0.44772 1,1 0,0.55228 -0.4477,1 -1,1 H 6 C 5.44772,8 5,7.55228 5,7 Z"
-                sodipodi:nodetypes="sssssss"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="m 5,12 c 0,-0.5523 0.44772,-1 1,-1 h 12 c 0.5523,0 1,0.4477 1,1 0,0.5523 -0.4477,1 -1,1 H 6 C 5.44772,13 5,12.5523 5,12 Z"
-                sodipodi:nodetypes="sssssss"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="m 11,17 c 0,-0.5523 0.4477,-1 1,-1 h 6 c 0.5523,0 1,0.4477 1,1 0,0.5523 -0.4477,1 -1,1 h -6 c -0.5523,0 -1,-0.4477 -1,-1 z"
-                sodipodi:nodetypes="sssssss"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <div id="overlay"></div>
-    <div id="mobile-menu">
-      <div class="mobile-menu-top">
-        <span class="mobile-menu-top-title">Menu</span>
-
-        <button id="mobile-menu-close-button">
+      <div id="light-dark-selectors" class="outer-top-nav-element">
+        {{ if eq .Mode "dark" }}
+        <a
+          id="light-mode-selector"
+          href="/set-mode?mode=light&redirect={{ .Redirect }}"
+          aria-label="Switch to light mode"
+        >
           <svg
-            width="1.5rem"
-            height="1.5rem"
-            viewBox="0 0 12 12"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </a>
+        {{ else }}
+        <a
+          id="dark-mode-selector"
+          href="/set-mode?mode=dark&redirect={{ .Redirect }}"
+          aria-label="Switch to dark mode"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </a>
+        {{ end }}
+        <a
+          href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
+          target="_blank"
+          class="download-button visible-on-desktop"
+        >
+          <svg
+            class="clipped-smpp-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <g>
+              <path
+                fill="transparent"
+                d="M512 52.54V111.05L0 414.41V52.54C0 22.37 21.79 0 51.2 0H460.8c29.4 0 51.2 22.37 51.2 52.54z"
+              />
+              <path
+                fill="transparent"
+                d="M512 460.8c0 29.4-21.8 51.2-51.2 51.2H51.2C21.79 512 0 490.2 0 460.8v-57L512 108.21z"
+              />
+              <path
+                fill="#fff6ee"
+                fill-rule="evenodd"
+                d="M416.88 170.25l-19.96 45.93-59.74-25.95-27.05 62.26-45.92-19.96 27.05-62.26-40.59-17.24c-13.06-4.83-36.28-15.68-68.01-15.68-39.28 0-55.91 20.08-55.91 39.68 0 25.48 19.64 37.24 64.98 54.39 58.94 21.55 87.14 50.46 87.14 97.98 0 53.4-41.3 99.45-128.45 99.45-36.27 0-80.33-13.78-98.97-25.05l20.25-48.61c19.64 11.26 51.02 23.69 82.75 23.69 39.29 0 61.46-18.13 61.46-45.08 0-24.99-17.13-39.68-59.94-54.86-56.41-19.6-92.18-48.5-92.18-96.02 0-54.39 46.35-95.05 120.39-95.05 28.17 0 50.42 4.6 67.22 10.72 20.12 8.14 39.92 17.09 59.83 25.74l27.05-62.26 45.93 19.96-27.06 62.26 59.74 25.95z"
+              />
+              <path
+                fill="#fff6ee"
+                fill-rule="evenodd"
+                d="M473.81 395.89c-18.55-8.05-36.75-14.9-55.29-22.96l-27.35 62.95-46.43-20.18 27.35-62.94-60.4-26.24c6.72-15.49 13.45-30.97 20.18-46.45l60.39 26.24 27.35-62.94 46.44 20.17-27.35 62.95 54.36 23.62z"
+              />
+            </g>
+          </svg>
+
+          <span class="download-button-text">Download</span>
+          <svg
+            class="download-button-arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </a>
+        <button id="mobile-menu-button">
+          <svg
+            width="3rem"
+            height="3rem"
+            viewBox="0 0 24 24"
+            fill="var(--text-color)"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M9.29289 1.29289C9.68342 0.902369 10.3166 0.902369 10.7071 1.29289C11.0976 1.68342 11.0976 2.31658 10.7071 2.70711L7.41421 6L10.7071 9.29289C11.0976 9.68342 11.0976 10.3166 10.7071 10.7071C10.3166 11.0976 9.68342 11.0976 9.29289 10.7071L6 7.41421L2.70711 10.7071C2.31658 11.0976 1.68342 11.0976 1.29289 10.7071C0.902369 10.3166 0.902369 9.68342 1.29289 9.29289L4.58579 6L1.29289 2.70711C0.902369 2.31658 0.902369 1.68342 1.29289 1.29289C1.68342 0.902369 2.31658 0.902369 2.70711 1.29289L6 4.58579L9.29289 1.29289Z"
-            ></path>
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M 5,7 C 5,6.44772 5.44772,6 6,6 h 12 c 0.5523,0 1,0.44772 1,1 0,0.55228 -0.4477,1 -1,1 H 6 C 5.44772,8 5,7.55228 5,7 Z"
+              sodipodi:nodetypes="sssssss"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="m 5,12 c 0,-0.5523 0.44772,-1 1,-1 h 12 c 0.5523,0 1,0.4477 1,1 0,0.5523 -0.4477,1 -1,1 H 6 C 5.44772,13 5,12.5523 5,12 Z"
+              sodipodi:nodetypes="sssssss"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="m 11,17 c 0,-0.5523 0.4477,-1 1,-1 h 6 c 0.5523,0 1,0.4477 1,1 0,0.5523 -0.4477,1 -1,1 h -6 c -0.5523,0 -1,-0.4477 -1,-1 z"
+              sodipodi:nodetypes="sssssss"
+            />
           </svg>
         </button>
       </div>
-      <nav class="mobile-menu-nav">
-        <div style="display: flex; flex-direction: column; gap: 0.75rem">
-          <span class="mobile-menu-nav-title">Getting started</span>
-          <ul class="mobile-menu-nav-list">
-            <a href="/guide" style="text-decoration: none">
-              <li class="mobile-menu-nav-list-item">Quick Start Guide 🚀</li>
-            </a>
-            <a href="/products" style="text-decoration: none">
-              <li class="mobile-menu-nav-list-item">Products 🎁</li>
-            </a>
-            <a href="/roadmap" style="text-decoration: none">
-              <li class="mobile-menu-nav-list-item">Roadmap 🚧</li>
-            </a>
-          </ul>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 0.75rem">
-          <span class="mobile-menu-nav-title">Resources</span>
-          <ul class="mobile-menu-nav-list">
-            <a
-              href="https://github.com/sprksoft/smpp"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <li class="mobile-menu-nav-list-item">
-                GitHub
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1rem"
-                  height="1rem"
-                  viewBox="0 0 127 96"
-                >
-                  <path
-                    fill="var(--text-color)"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-                  />
-                </svg>
-              </li>
-            </a>
-            <a
-              href="https://discord.gg/qCHZYepDqZ"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <li class="mobile-menu-nav-list-item">
-                Discord
-                <svg
-                  width="1rem"
-                  height="1rem"
-                  style="padding: 2px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Discord-Logo"
-                  viewBox="0 0 127 96"
-                >
-                  <path
-                    id="Discord-Symbol-Blurple"
-                    style="fill: var(--accent)"
-                    d="M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z"
-                  />
-                </svg>
-              </li>
-            </a>
-            <a href="/release-notes" style="text-decoration: none">
-              <li class="mobile-menu-nav-list-item">Release Notes 📃</li>
-            </a>
-            <a href="/about-us" style="text-decoration: none">
-              <li class="mobile-menu-nav-list-item">About Us ✨</li>
-            </a>
-          </ul>
-        </div>
-      </nav>
-      <a
-        href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
-        target="_blank"
-        class="download-button"
-      >
+    </nav>
+  </header>
+  <div id="overlay"></div>
+  <div id="mobile-menu">
+    <div class="mobile-menu-top">
+      <span class="mobile-menu-top-title">Menu</span>
+
+      <button id="mobile-menu-close-button">
         <svg
-          class="clipped-smpp-logo"
+          width="1.5rem"
+          height="1.5rem"
+          viewBox="0 0 12 12"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
         >
-          <g>
-            <path
-              fill="transparent"
-              d="M512 52.54V111.05L0 414.41V52.54C0 22.37 21.79 0 51.2 0H460.8c29.4 0 51.2 22.37 51.2 52.54z"
-            />
-            <path
-              fill="transparent"
-              d="M512 460.8c0 29.4-21.8 51.2-51.2 51.2H51.2C21.79 512 0 490.2 0 460.8v-57L512 108.21z"
-            />
-
-            <path
-              fill="#fff6ee"
-              fill-rule="evenodd"
-              d="M416.88 170.25l-19.96 45.93-59.74-25.95-27.05 62.26-45.92-19.96 27.05-62.26-40.59-17.24c-13.06-4.83-36.28-15.68-68.01-15.68-39.28 0-55.91 20.08-55.91 39.68 0 25.48 19.64 37.24 64.98 54.39 58.94 21.55 87.14 50.46 87.14 97.98 0 53.4-41.3 99.45-128.45 99.45-36.27 0-80.33-13.78-98.97-25.05l20.25-48.61c19.64 11.26 51.02 23.69 82.75 23.69 39.29 0 61.46-18.13 61.46-45.08 0-24.99-17.13-39.68-59.94-54.86-56.41-19.6-92.18-48.5-92.18-96.02 0-54.39 46.35-95.05 120.39-95.05 28.17 0 50.42 4.6 67.22 10.72 20.12 8.14 39.92 17.09 59.83 25.74l27.05-62.26 45.93 19.96-27.06 62.26 59.74 25.95z"
-            />
-            <path
-              fill="#fff6ee"
-              fill-rule="evenodd"
-              d="M473.81 395.89c-18.55-8.05-36.75-14.9-55.29-22.96l-27.35 62.95-46.43-20.18 27.35-62.94-60.4-26.24c6.72-15.49 13.45-30.97 20.18-46.45l60.39 26.24 27.35-62.94 46.44 20.17-27.35 62.95 54.36 23.62z"
-            />
-          </g>
+          <path
+            d="M9.29289 1.29289C9.68342 0.902369 10.3166 0.902369 10.7071 1.29289C11.0976 1.68342 11.0976 2.31658 10.7071 2.70711L7.41421 6L10.7071 9.29289C11.0976 9.68342 11.0976 10.3166 10.7071 10.7071C10.3166 11.0976 9.68342 11.0976 9.29289 10.7071L6 7.41421L2.70711 10.7071C2.31658 11.0976 1.68342 11.0976 1.29289 10.7071C0.902369 10.3166 0.902369 9.68342 1.29289 9.29289L4.58579 6L1.29289 2.70711C0.902369 2.31658 0.902369 1.68342 1.29289 1.29289C1.68342 0.902369 2.31658 0.902369 2.70711 1.29289L6 4.58579L9.29289 1.29289Z"
+          ></path>
         </svg>
-
-        <span class="download-button-text">Download</span>
-        <svg
-          class="download-button-arrow"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-        </svg>
-      </a>
+      </button>
     </div>
-    <main>{{ template "content" . }}</main>
-
-    <div class="gradient-box-wrapper"><div class="gradient-box"></div></div>
-    <footer>
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h4 class="footer-title">Product🎁</h4>
-          <ul class="footer-list">
-            <li class="footer-item"><a href="/guide">Guide</a></li>
-            <li class="footer-item"><a href="/products">Products</a></li>
-            <li class="footer-item"><a href="/roadmap">Roadmap</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-title">Community👥</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="https://discord.gg/qCHZYepDqZ" target="_blank"
-                >Discord</a
-              >
-            </li>
-            <li class="footer-item">
-              <a href="https://github.com/sprksoft/smpp" target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li class="footer-item"><a href="/about-us">About Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4 class="footer-title">Extra🚀</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="/release-notes">Release Notes</a>
-            </li>
-            <li class="footer-item">
-              <a href="https://gc.smartschoolplusplus.com/" target="_blank"
-                >Global Chat</a
-              >
-            </li>
-            <li class="footer-item">
-              <a
-                href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
-                target="_blank"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </div>
+    <nav class="mobile-menu-nav">
+      <div style="display: flex; flex-direction: column; gap: 0.75rem">
+        <span class="mobile-menu-nav-title">Getting started</span>
+        <ul class="mobile-menu-nav-list">
+          <a href="/guide" style="text-decoration: none">
+            <li class="mobile-menu-nav-list-item">Quick Start Guide 🚀</li>
+          </a>
+          <a href="/products" style="text-decoration: none">
+            <li class="mobile-menu-nav-list-item">Products 🎁</li>
+          </a>
+          <a href="/roadmap" style="text-decoration: none">
+            <li class="mobile-menu-nav-list-item">Roadmap 🚧</li>
+          </a>
+        </ul>
       </div>
-      <div class="footer-bottom">
-        <span class="copy-right">© 2025 Smartschool++ — Built with ❤️</span>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem">
+        <span class="mobile-menu-nav-title">Resources</span>
+        <ul class="mobile-menu-nav-list">
+          <a
+            href="https://github.com/sprksoft/smpp"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <li class="mobile-menu-nav-list-item">
+              GitHub
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+            </li>
+          </a>
+          <a
+            href="https://discord.gg/qCHZYepDqZ"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <li class="mobile-menu-nav-list-item">
+              Discord
+              <svg
+                width="1rem"
+                height="1rem"
+                style="padding: 2px"
+                xmlns="http://www.w3.org/2000/svg"
+                id="Discord-Logo"
+                viewBox="0 0 127 96"
+              >
+                <path
+                  id="Discord-Symbol-Blurple"
+                  style="fill: var(--accent)"
+                  d="M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z"
+                />
+              </svg>
+            </li>
+          </a>
+          <a href="/release-notes" style="text-decoration: none">
+            <li class="mobile-menu-nav-list-item">Release Notes 📃</li>
+          </a>
+          <a href="/about-us" style="text-decoration: none">
+            <li class="mobile-menu-nav-list-item">About Us ✨</li>
+          </a>
+        </ul>
       </div>
-    </footer>
+    </nav>
+    <a
+      href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
+      target="_blank"
+      class="download-button"
+    >
+      <svg
+        class="clipped-smpp-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <g>
+          <path
+            fill="transparent"
+            d="M512 52.54V111.05L0 414.41V52.54C0 22.37 21.79 0 51.2 0H460.8c29.4 0 51.2 22.37 51.2 52.54z"
+          />
+          <path
+            fill="transparent"
+            d="M512 460.8c0 29.4-21.8 51.2-51.2 51.2H51.2C21.79 512 0 490.2 0 460.8v-57L512 108.21z"
+          />
 
-    <script src="js/main.js"></script>
-    {{ if ne .MainJS "null"}}
-    <script src="js/{{ .MainJS }}"></script>
-    {{ end }}
-  </body>
+          <path
+            fill="#fff6ee"
+            fill-rule="evenodd"
+            d="M416.88 170.25l-19.96 45.93-59.74-25.95-27.05 62.26-45.92-19.96 27.05-62.26-40.59-17.24c-13.06-4.83-36.28-15.68-68.01-15.68-39.28 0-55.91 20.08-55.91 39.68 0 25.48 19.64 37.24 64.98 54.39 58.94 21.55 87.14 50.46 87.14 97.98 0 53.4-41.3 99.45-128.45 99.45-36.27 0-80.33-13.78-98.97-25.05l20.25-48.61c19.64 11.26 51.02 23.69 82.75 23.69 39.29 0 61.46-18.13 61.46-45.08 0-24.99-17.13-39.68-59.94-54.86-56.41-19.6-92.18-48.5-92.18-96.02 0-54.39 46.35-95.05 120.39-95.05 28.17 0 50.42 4.6 67.22 10.72 20.12 8.14 39.92 17.09 59.83 25.74l27.05-62.26 45.93 19.96-27.06 62.26 59.74 25.95z"
+          />
+          <path
+            fill="#fff6ee"
+            fill-rule="evenodd"
+            d="M473.81 395.89c-18.55-8.05-36.75-14.9-55.29-22.96l-27.35 62.95-46.43-20.18 27.35-62.94-60.4-26.24c6.72-15.49 13.45-30.97 20.18-46.45l60.39 26.24 27.35-62.94 46.44 20.17-27.35 62.95 54.36 23.62z"
+          />
+        </g>
+      </svg>
+
+      <span class="download-button-text">install</span>
+      <svg
+        class="download-button-arrow"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+      </svg>
+    </a>
+  </div>
+  <main>{{ template "content" . }}</main>
+
+  <div class="gradient-box-wrapper"><div class="gradient-box"></div></div>
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4 class="footer-title">Product <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-gift"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M12 8l0 13" /><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" /><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" /></svg></h4>
+        <ul class="footer-list">
+          <li class="footer-item"><a href="/guide">Guide</a></li>
+          <li class="footer-item"><a href="/products">Products</a></li>
+          <li class="footer-item"><a href="/roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">Community <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg></h4>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="https://discord.gg/qCHZYepDqZ" target="_blank"
+              >Discord</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="https://github.com/sprksoft/smpp" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li class="footer-item"><a href="/about-us">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">Extra <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-library-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2a3.667 3.667 0 0 1 3.667 3.667v8.666a3.667 3.667 0 0 1 -3.667 3.667h-8.666a3.667 3.667 0 0 1 -3.667 -3.667v-8.666a3.667 3.667 0 0 1 3.667 -3.667zm-4.333 4a1 1 0 0 0 -1 1v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0 -2h-2v-2a1 1 0 0 0 -1 -1" /><path d="M3.517 6.391a1 1 0 0 1 .99 1.738c-.313 .178 -.506 .51 -.507 .868v10c0 .548 .452 1 1 1h10c.284 0 .405 -.088 .626 -.486a1 1 0 0 1 1.748 .972c-.546 .98 -1.28 1.514 -2.374 1.514h-10c-1.652 0 -3 -1.348 -3 -3v-10.002a3 3 0 0 1 1.517 -2.605" /></svg></h4>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="/release-notes">Release Notes</a>
+          </li>
+          <li class="footer-item">
+            <a href="https://gc.smartschoolplusplus.com/" target="_blank"
+              >Global Chat</a
+            >
+          </li>
+          <li class="footer-item">
+            <a
+              href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
+              target="_blank"
+              >Download</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="copy-right"> 2025 Smartschool++ — Built with ❤️</span>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM fully loaded');
+      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+      const themeToggleBtn = document.querySelector('#light-mode-selector, #dark-mode-selector');
+      const html = document.documentElement;
+      
+      console.log('Theme toggle button:', themeToggleBtn);
+      console.log('Current theme classes:', html.className);
+      
+      // Handle theme toggle clicks
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isDark = html.classList.contains('theme-dark');
+          
+          if (isDark) {
+            // Switching to light mode
+            html.classList.remove('theme-dark');
+            html.classList.add('theme-light');
+            localStorage.setItem('theme', 'light');
+          } else {
+            // Switching to dark mode
+            html.classList.remove('theme-light');
+            html.classList.add('theme-dark');
+            localStorage.setItem('theme', 'dark');
+          }
+          
+          console.log('New theme classes:', html.className);
+          // Still submit the form for server-side tracking
+          window.location.href = this.href;
+        });
+      } else {
+        console.error('Theme toggle button not found!');
+      }
+
+      // Listen for system theme changes
+      prefersDarkScheme.addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          if (e.matches) {
+            html.classList.add('theme-dark');
+            html.classList.remove('theme-light');
+          } else {
+            html.classList.add('theme-light');
+            html.classList.remove('theme-dark');
+          }
+        }
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+  {{ if ne .MainJS "null"}}
+  <script src="js/{{ .MainJS }}"></script>
+  {{ end }}
+</body>
 </html>

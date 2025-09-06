@@ -19,16 +19,20 @@ func SetModeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	http.SetCookie(w, &http.Cookie{
-		Name:    "mode",
-		Value:   mode,
-		Expires: time.Now().Add(365 * 24 * time.Hour),
+		Name:     "mode",
+		Value:    mode,
+		Path:     "/",
+		Expires:  time.Now().Add(365 * 24 * time.Hour),
+		HttpOnly: false,
+		SameSite: http.SameSiteLaxMode,
 	})
 
-	if strings.Contains(redirect, ".") {
-		return
+	if redirect == "" || strings.Contains(redirect, "..") {
+		redirect = "/"
 	}
 	http.Redirect(w, r, redirect, http.StatusSeeOther)
 }
+
 func RenderTemplate(w http.ResponseWriter, tmpl string, data any) {
 	t, err := template.ParseFiles("content/template/template.html", tmpl)
 	if err != nil {
@@ -43,6 +47,7 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, data any) {
 		log.Printf("Error executing template %s: %v", tmpl, err)
 	}
 }
+
 func DynamicHandler(w http.ResponseWriter, r *http.Request) {
 	page := strings.ToLower(r.URL.Path[1:])
 	pageTitle := "Title"

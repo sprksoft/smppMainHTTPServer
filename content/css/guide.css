@@ -4,12 +4,13 @@ html {
 
 #guide-menu {
   position: fixed;
-  left: 0rem;
+  left: 0.5rem;
   top: 50%;
   display: flex;
   flex-direction: row;
   transform: translateY(-50%);
   align-items: center;
+  z-index: 67;
 }
 
 .guide-menu-buttons {
@@ -18,10 +19,11 @@ html {
   gap: 1.5rem;
   box-shadow: 0px 0px 50px 5px var(--shadow-color);
   background-color: var(--transparent-background);
-  padding: 1.5rem;
-  padding-left: 0.5rem;
-  border-top-right-radius: 1.75rem;
-  border-bottom-right-radius: 1.75rem;
+  padding: 0.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 .guide-button {
@@ -91,7 +93,7 @@ section:last-child {
   background-color: var(--green);
   box-shadow: 0px 0px 25px 0px
     color-mix(in srgb, var(--shadow-color) 70%, var(--green) 30%);
-  color: var(--white);
+  color: var(--black);
   font-weight: 600;
   font-size: 1.2rem;
   padding: 1rem 1.5rem;
@@ -169,7 +171,8 @@ h2 {
 
 .instruction-icon {
   stroke: var(--text-color);
-  width: 4rem;
+  width: 3rem;
+  height: 3rem;
   font-size: 3rem;
   margin: 0;
 }

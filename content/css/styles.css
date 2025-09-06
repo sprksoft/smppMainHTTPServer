@@ -1,15 +1,49 @@
-html {
+/* Theme variables */
+:root, .theme-light {
+  /* Light theme (default) */
+  --background: #ffffff;
+  --background-ui1: #f8f9fa;
+  --background-ui2: #e9ecef;
+  --text-color: #212529;
+  --accent: #4a6cf7;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transparent-background: rgba(255, 255, 255, 0.8);
+  --button: #4a6cf7;
+  --button-hover-gradient: linear-gradient(135deg, #5a7cff 0%, #7a9aff 100%);
+  --button-active-gradient: linear-gradient(135deg, #3a5ce7 0%, #5a7cff 100%);
+  --white: #ffffff;
+  --red: #ff0000;
+  --highlight-shadow-color: rgba(0, 0, 0, 0.2);
+  --border-color: #e9ecef;
   --icon-size: 2.5rem;
-  --button-gradient: linear-gradient(
-    60deg,
-    rgb(62, 73, 232) 0%,
-    rgb(121, 127, 209) 100%
-  );
-  --card-gradient: linear-gradient(
-    0deg,
-    var(--background-ui1),
-    var(--background-ui2)
-  );
+}
+
+/* Dark theme */
+.theme-dark {
+  --background: #121212;
+  --background-ui1: #1e1e1e;
+  --background-ui2: #2d2d2d;
+  --text-color: #e1e1e1;
+  --accent: #6a8aff;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --transparent-background: rgba(30, 30, 30, 0.8);
+  --button: #6a8aff;
+  --button-hover-gradient: linear-gradient(135deg, #7a9aff 0%, #8f9bff 100%);
+  --button-active-gradient: linear-gradient(135deg, #4a5ce7 0%, #6a8aff 100%);
+  --white: #e1e1e1;
+  --red: #ff6b6b;
+  --highlight-shadow-color: rgba(0, 0, 0, 0.4);
+  --border-color: #2d2d2d;
+}
+
+/* Add smooth transitions for theme changes */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  --icon-size: 2.5rem;
+  --button-gradient: linear-gradient(135deg, #4a6cf7 0%, #6a8aff 100%);
+  --button-hover-gradient: linear-gradient(135deg, #5a7cff 0%, #7a9aff 100%);
+  --button-active-gradient: linear-gradient(135deg, #3a5ce7 0%, #5a7cff 100%);
+  --card-gradient: linear-gradient(0deg, var(--background-ui1), var(--background-ui2));
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
   color: var(--text-color);
@@ -45,19 +79,25 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
   position: fixed;
-  height: 4rem;
+  height: 3rem;
   width: calc(75% - 4rem);
   padding: 2rem;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
   backdrop-filter: blur(10px);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   transition: all 0.2s ease-out;
   z-index: 40;
+  padding-top: 5px;
 }
 
 .is-scrolled header {
@@ -304,6 +344,51 @@ main {
   scale: 1.02;
 }
 
+.try-now-button {
+  gap: 1rem;
+  background: var(--button-gradient);
+  border-radius: 3rem;
+  border: none;
+  text-decoration: none;
+  color: var(--white);
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.try-now-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--button-hover-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.try-now-button:hover::before {
+  opacity: 1;
+}
+
+.try-now-button:active {
+  transform: translateY(1px);
+  background: var(--button-active-gradient);
+}
+
+.try-now-button > * {
+  position: relative;
+  z-index: 1;
+}
+
 .download-button {
   gap: 5px;
   background: var(--button-gradient);
@@ -317,6 +402,35 @@ main {
   align-content: center;
   align-items: center;
   overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.download-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--button-hover-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.download-button:hover::before {
+  opacity: 1;
+}
+
+.download-button:active {
+  transform: translateY(1px);
+  background: var(--button-active-gradient);
+}
+
+.download-button > * {
+  position: relative;
+  z-index: 1;
 }
 
 .clipped-smpp-logo {
@@ -382,6 +496,9 @@ main {
 #light-dark-selectors {
   justify-content: flex-end;
   gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #light-mode-selector > svg,
@@ -391,17 +508,27 @@ main {
   transition: all 0.3s ease-in-out;
   width: var(--icon-size);
   height: var(--icon-size);
+  stroke: var(--text-color);
+  fill: none;
 }
 
 #light-mode-selector:hover > svg,
 #light-mode-selector:focus > svg {
   rotate: 25deg;
+  background-color: var(--background-ui1);
 }
 
 #dark-mode-selector:hover > svg,
 #dark-mode-selector:focus > svg {
   scale: 1.05;
   rotate: -10deg;
+  background-color: var(--background-ui1);
+}
+
+#theme-toggle,
+#theme-toggle .theme-icon,
+[data-theme] #theme-toggle .theme-icon {
+  display: none;
 }
 
 #home-button {
@@ -603,6 +730,7 @@ h4 {
   margin-top: 2rem;
   width: 100%;
 }
+
 @media (max-width: 1170px) {
   body {
     width: 100%;

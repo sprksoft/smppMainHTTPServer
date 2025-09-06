@@ -3,25 +3,42 @@
   font-size: 1.9em;
   color: var(--text-color);
   overflow: visible;
-  margin-top: 2rem;
-  margin-bottom: 8rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+#top-title h1 {
+  margin: 0;
+  line-height: 1.1;
 }
 
 #top-title-accent {
   background: linear-gradient(
-    60deg,
-    rgb(62, 73, 232) 0%,
-    rgb(83, 95, 250) 48%,
-    rgb(121, 127, 209) 100%
+    135deg,
+    #4a6cf7 0%,
+    #6a8aff 100%
   );
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 2.4em;
   white-space: nowrap;
-  animation: topTitle 0.3s ease-out 0ms 1 forwards;
+  animation: 
+    gradientFlow 8s ease infinite alternate,
+    topTitle 0.3s ease-out 0ms 1 forwards;
   z-index: 2;
   position: relative;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes topTitle {
@@ -77,6 +94,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
+  margin-top: 1rem;
 }
 
 .try-now-clipped-smpp-logo {
@@ -213,23 +231,23 @@ html {
 }
 
 html:has(.preview-img-container.ready #darkSands) {
-  background-image: url(../media/backgroundDarkSands.webp);
+  background-image: url(../media/backgroundDarkSands.jpg);
 }
 
 html:has(.preview-img-container.ready #midnightSapphire) {
-  background-image: url(../media/backgroundMidnightSapphire.webp);
+  background-image: url(../media/backgroundMidnightSapphire.jpg);
 }
 
 html:has(.preview-img-container.ready #rubyEclipse) {
-  background-image: url(../media/backgroundRubyEclipse.webp);
+  background-image: url(../media/backgroundRubyEclipse.jpg);
 }
 
 html:has(.preview-img-container.ready #cherryHaze) {
-  background-image: url(../media/backgroundCherryHaze.webp);
+  background-image: url(../media/backgroundCherryHaze.jpg);
 }
 
 html:has(.preview-img-container.ready #fluorescentGalaxy) {
-  background-image: url(../media/backgroundFluorescentGalaxy.webp);
+  background-image: url(../media/backgroundFluorescentGalaxy.jpg);
 }
 
 .preview-img-container.prev {
@@ -745,15 +763,15 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
 
 @media (max-width: 1170px) {
   #top-title {
-    font-size: 0.8em;
+    font-size: 0.5em;
     overflow: hidden !important;
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
 
   .main-title {
-    font-size: 1.9rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .interactive-text {
@@ -952,4 +970,33 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
   .mains {
     max-width: 100%;
   }
+}
+
+
+.with-container {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.with-text {
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+
+.typewriter {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: var(--accent);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }

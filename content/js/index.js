@@ -294,3 +294,40 @@ const funObserver = new IntersectionObserver((entries) => {
 });
 
 funObserver.observe(targetElement);
+
+const words = ['Games', 'Widgets', 'Themes','Global Chat','Fun'];
+let currentWordIndex = 0;
+let currentCharIndex = 0;
+let isDeleting = false;
+const textElement = document.getElementById('text');
+        
+function typeWriter() {
+    const currentWord = words[currentWordIndex];
+    
+    if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, currentCharIndex - 1);
+        currentCharIndex--;
+    } else {
+        textElement.textContent = currentWord.substring(0, currentCharIndex + 1);
+        currentCharIndex++;
+    }
+    
+    let typeSpeed = 100;
+    
+    if (isDeleting) {
+        typeSpeed = 50;
+    }
+    
+    if (!isDeleting && currentCharIndex === currentWord.length) {
+        typeSpeed = 2000;
+        isDeleting = true;
+    } else if (isDeleting && currentCharIndex === 0) {
+        isDeleting = false;
+        currentWordIndex = (currentWordIndex + 1) % words.length;
+        typeSpeed = 500;
+    }
+    
+    setTimeout(typeWriter, typeSpeed);
+}
+
+typeWriter();
