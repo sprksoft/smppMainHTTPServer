@@ -1,95 +1,65 @@
 {{ define "content" }}
-<h1>Our Story</h1>
+<h1>{{ T `about.our_story` }}</h1>
 <div class="main-content">
   <div class="timeline-line"></div>
   {{ .MarkdownHTML }}
 </div>
-<h1>Our Team</h1>
+<h1>{{ T `about.our_team` }}</h1>
 
-<h2 class="name">Sibe</h2>
+<h2 class="name">{{ T `about.team_sibe` }}</h2>
 <div class="text-card">
   <p>
-    Hey! Sibe hier 👋 Ik heb het meeste van het widget-systeem gemaakt, de
-    global chat en het quick menu gemaakt en nog wat kleine tweaks aan de games
-    gedaan 🎮. Niet alles wat wij gemaakt hebben is even nuttig 🤷‍♂️, maar ik denk
-    dat ik voor het hele team spreek als ik zeg dat we ongelofelijk veel geleerd
-    hebben van dit hele project 📚💡.
-    <br />Voor mij is het belangrijkste dat de kwaliteit van dit project
-    gegarandeerd wordt, ook voor volgende generaties.
-    <br />
-    <br />
-    – <b>Sibe</b>, <i>developer</i> &
-    <a href="https://rust-lang.org" target="_blank"> Rust-fan 🦀💻</a>
+    {{ T `about.sibe_description` | html }}
   </p>
 </div>
-<h2 class="name">Lukas</h2>
+<h2 class="name">{{ T `about.team_lukas` }}</h2>
 <div class="text-card">
   <p>
-    <i
-      >Doe alleen de dingen die je energie geven, niet die je energie kosten.
-      ⚡</i
-    >
-    <br style="margin-bottom: 0.55rem" />
-    Deze woorden zijn me bijgebleven uit een gesprek met Jan Schuer, CEO van
-    Smartschool. Met die instelling blijft Smartschool++ geweldig. <br />
-    De Plant🪴, Delijn🚌, het weer🌦️ en de <a href="/">officiële website</a>...
-    stuk voor stuk projecten waar ik trots op ben en die samen Smartschool++
-    vormgeven. Heel erg bedankt aan iedereen die ons sinds dag 1 heeft gesteund
-    ❤️. <br /><br />
-    – <b>Lukas</b>, <i>UI-ontwerper</i>, <i>ontwikkelaar</i> &
-    <a href="https://radiohead.com/" target="_blank">Radiohead-fan 📻</a>
+    {{ T `about.lukas_description` | html }}
   </p>
 </div>
-<h2 class="name">Bjarne</h2>
+<h2 class="name">{{ T `about.team_bjarne` }}</h2>
 <div class="text-card">
   <p>
-    Hey hey, ik ben Bjarne! Mijn focus ligt op het verbeteren van de
-    gebruikerservaring door UI-bugs te fixen 🐛 en
-    <i>quality of life</i>-verbeteringen toe te voegen ✨. Mijn werk zie je op
-    bijna elke pagina, <br />
-    ook al valt het niet altijd meteen op, voel je ongetwijfeld het verschil.
-    <br />
-    ❤️ naar iedereen die ons steunt en gebruik maakt van Smartschool++<br /><br />
-    – <b>Bjarne</b>, <i>Ervaringscoördinator</i>, &
-    <a href="https://myanimelist.net/" target="_blank">Anime-fan 📻</a>
+    {{ T `about.bjarne_description` | html }}
   </p>
 </div>
-<h1>Our contributors</h1>
+<h1>{{ T `about.our_contributors` }}</h1>
 <div class="contributers-container">
   <div>
-    <h3 style="text-align: left">Development:</h3>
+    <h3 style="text-align: left">{{ T `about.development` }}</h3>
     <ul>
-      <li><b>BeagleNF404</b>, designer (logo & plant visuals)</li>
-      <li><b>JJorne</b>, assigments widget</li>
-      <li><b>Broodje56</b>, Breakout Game</li>
-      <li><b>ProgramORdie</b>, Flappy++</li>
-      <li><b>Xavier Demaerel</b>, initial development</li>
-      <li><b>Yamura (Marcel)</b>, first documentation</li>
+      <li><b>{{ T `about.contributor_beagle_name` }}</b>, {{ T `about.contributor_beagle_designer` }}</li>
+      <li><b>{{ T `about.contributor_jjorne_name` }}</b>, {{ T `about.contributor_jjorne_widget` }}</li>
+      <li><b>{{ T `about.contributor_broodje_name` }}</b>, {{ T `about.contributor_broodje_game` }}</li>
+      <li><b>{{ T `about.contributor_program_name` }}</b>, {{ T `about.contributor_program_flappy` }}</li>
+      <li><b>{{ T `about.contributor_xavier_name` }}</b>, {{ T `about.contributor_xavier_dev` }}</li>
+      <li><a href="https://yamura.dev" target="_blank"><b>{{ T `about.contributor_yamura_name` }}</b></a>, {{ T `about.contributor_yamura_doc` }}</li>
     </ul>
-    <h3 style="text-align: left">Other:</h3>
+    <h3 style="text-align: left">{{ T `about.other` }}</h3>
     <ul>
       <li>
         <a href="https://discord.gg/qCHZYepDqZ" target="_blank"
-          ><b>Our community</b></a
-        >, keeping us motivated
+          ><b>{{ T `about.contributor_community` }}</b></a
+        >, {{ T `about.contributor_community_desc` }}
       </li>
       <li>
         <a
           href="https://www.linkedin.com/in/frank-claikens-b6b1a1248/"
           target="_blank"
-          ><b>Frank Claikens</b></a
+          ><b>{{ T `about.contributor_mentor_name` }}</b></a
         >
-        , our mentor
+        , {{ T `about.contributor_mentor_desc` }}
       </li>
-      <li><b>Otis</b>, Discord manager</li>
-      <li><b>Our families</b>, supporting us</li>
-      <li><b>Karel Broens</b>, the plant idea</li>
+      <li><b>{{ T `about.contributor_otis_name` }}</b>, {{ T `about.contributor_discord_manager` }}</li>
+      <li><b>{{ T `about.contributor_families` }}</b>, {{ T `about.contributor_families_desc` }}</li>
+      <li><b>{{ T `about.contributor_karel_name` }}</b>, {{ T `about.contributor_plant_idea_desc` }}</li>
       <li>
         <a href="https://www.technischatheneumkeerbergen.be/" target="_blank"
-          ><b>TAK</b></a
-        >, our school for helping us
+          ><b>{{ T `about.contributor_tak_school` }}</b></a
+        >, {{ T `about.contributor_school_desc` }}
       </li>
-      <li><b>The moderators</b>, keeping everything clean</li>
+      <li><b>{{ T `about.contributor_moderators` }}</b>, {{ T `about.contributor_moderators_desc` }}</li>
     </ul>
   </div>
   <div>

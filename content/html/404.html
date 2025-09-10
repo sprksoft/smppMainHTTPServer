@@ -1,3 +1,7 @@
 {{ define "content" }}
-AAAAAAAAAAAAAAAAA WHY ARE YOU HERE
+<div class="error-container">
+  <h1>{{ T `page_not_found` }}</h1>
+  <p>{{ T `error_page_message` }}</p>
+  <a href="/" class="back-home-btn">{{ T `back_to_home` }}</a>
+</div>
 {{ end }}

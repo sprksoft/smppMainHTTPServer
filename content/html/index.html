@@ -1,13 +1,13 @@
 {{ define "content" }}
 <div id="top-title">
   <h1 style="margin: 0">
-    Welcome to <br /><span id="top-title-accent">{{ .PageTitle }}</span><br /><i
+    {{ T `index_welcome` }} <br /><span id="top-title-accent">{{ .PageTitle }}</span><br /><i
       style="font-weight: 400"
-      >innovating</i
+      >{{ T `index_innovating` }}</i
     >
-    education<br>
+    {{ T `index_education` }}<br>
     <div class="with-container">
-      <span class="with-text"><i>with </i></span>
+      <span class="with-text"><i>{{ T `index_with` }}</i></span>
       <div class="typewriter">
         <span id="text"></span><span class="cursor">|</span>
       </div>
@@ -48,7 +48,7 @@
       </g>
     </svg>
 
-    <span class="try-now-text">Try it now</span>
+    <span class="try-now-text">{{ T `try_now` }}</span>
     <svg
       class="try-now-arrow"
       viewBox="0 0 24 24"
@@ -63,7 +63,7 @@
 </div>
 <div id="personalization" class="mains">
   <h1 class="main-title">
-    A new standard for <span class="accent-text">personalization</span>
+    {{ T `index_personalization_title` }}
   </h1>
   <div id="theme-preview-container">
     <div class="preview-img-container">
@@ -406,7 +406,7 @@
       <path
         d="M5.06 3.024C4.804 1.238 6.858.052 8.276 1.168l17.117 13.466c1.47 1.159.688 3.522-1.182 3.574l-7.03.19a1.998 1.998 0 0 0-1.65.953l-3.68 5.993c-.98 1.594-3.418 1.089-3.685-.764L5.06 3.024Z"
       ></path></svg
-    >Psst... this page is interactive</span
+    >{{ T `index_interactive` }}</span>
   >
   <div id="theme-preview-buttons">
     <button id="prev-button" class="theme-preview-button">
@@ -437,7 +437,7 @@
 </div>
 <div id="productivity" class="mains">
   <h1 class="main-title">
-    <span class="accent-text">Productivity</span> at its finest
+    {{ T `index_productivity_title` }}
   </h1>
   <div id="prod">
     <div id="prod-preview-wrapper">
@@ -565,22 +565,22 @@
 </div>
 <div id="fun" class="mains">
   <h1 class="main-title">
-    Not without some <span class="accent-text">fun</span>
+    {{ T `index_fun_title` }}
   </h1>
   <div id="fun-container">
     <div id="fun-app-gallery">
       <div id="fun-app-gallery-grid">
         <div id="fun-app-flappy" class="fun-app-container">
           <span class="emoji">🐤</span>
-          <span class="fun-app-title">Flappy++</span>
+          <span class="fun-app-title">{{ T `flappy_game` }}</span>
         </div>
         <div id="fun-app-snake" class="fun-app-container">
           <span class="emoji">🐍</span>
-          <span class="fun-app-title">Snake++</span>
+          <span class="fun-app-title">{{ T `snake_game` }}</span>
         </div>
         <div id="fun-app-plant" class="fun-app-container">
           <span class="emoji">🪴</span>
-          <span class="fun-app-title">Plant</span>
+          <span class="fun-app-title">{{ T `plant_game` }}</span>
         </div>
         <div id="fun-app-gc" class="fun-app-container">
           <svg
@@ -605,7 +605,7 @@
               </g>
             </g>
           </svg>
-          <span class="fun-app-title">Global Chat</span>
+          <span class="fun-app-title">{{ T `global_chat` }}</span>
         </div>
       </div>
     </div>

@@ -3,23 +3,23 @@
   <div class="guide-menu-buttons">
     <button class="guide-button active" data-target="install">
       <svg class="guide-button-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-      <span>Installation</span>
+      <span>{{ T `guide.installation` }}</span>
     </button>
     <button class="guide-button" data-target="settings">
       <svg class="guide-button-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
-      <span>Settings</span>
+      <span>{{ T `guide.settings` }}</span>
     </button>
     <button class="guide-button" data-target="widgets">
       <svg class="guide-button-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg>
-      Widgets
+      {{ T `guide.widgets` }}
     </button>
     <button class="guide-button" data-target="quick">
       <svg class="guide-button-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" /></svg>
-      Quick Menu
+      {{ T `guide.quick_menu` }}
     </button>
     <button class="guide-button" data-target="faq">
       <svg class="guide-button-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help-hexagon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" /><path d="M12 16v.01" /><path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" /></svg>
-      FAQ
+      {{ T `guide.faq` }}
     </button>
   </div>
   <button id="guide-menu-toggle">
@@ -36,28 +36,28 @@
 </div>
 <div id="content">
   <section id="install">
-    <h2>How to install Smartschool++</h2>
+    <h2>{{ T `guide.how_to_install` }}</h2>
 
     <div class="instruction-card" style="margin-left: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">1</span>
-        <h3 class="instruction-title">Go to the Chrome Webstore</h3>
+        <h3 class="instruction-title">{{ T `guide.go_to_chrome_webstore` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-chrome"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 9h8.4" /><path d="M14.598 13.5l-4.2 7.275" /><path d="M9.402 13.5l-4.2 -7.275" /></svg>
         </div>
         <p class="instruction-description">
-          Go to the Webstore and look for
+          {{ T `guide.instruction_go_to_webstore` }}
           <a
             target="_blank"
             href="https://chromewebstore.google.com/detail/smartschool++/bdhficnphioomdjhdfbhdepjgggekodf"
-            >Smartschool++</a
+            >{{ T `products.smartschool_plus_plus` }}</a
           >, or
           <a
             target="_blank"
             href="https://chromewebstore.google.com/detail/smartschool++-lite/dogkhghdahlgebhojaaoijdcadmebkcg"
-            >Lite</a
+            >{{ T `products.lite` }}</a
           >
         </p>
       </div>
@@ -65,14 +65,14 @@
     <div class="instruction-card" style="margin-right: 20rem">
       <div class="instruction-card-top">
         <span class="instruction-number">2</span>
-        <h3 class="instruction-title">Click "Install"</h3>
+        <h3 class="instruction-title">{{ T `guide.click_install` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
         </div>
         <p class="instruction-description">
-          Click
+          {{ T `guide.click` }}
           <button
             style="
               background-color: #0b57d0;
@@ -86,106 +86,78 @@
               color: var(--white);
             "
           >
-            Download
+            {{ T `guide.download_button` }}
           </button>
-          & then allow <i>all</i> the required <b>permissions</b>
+          {{ T `guide.instruction_allow_permissions` }}
         </p>
       </div>
     </div>
     <div class="instruction-card">
       <div class="instruction-card-top">
         <span class="instruction-number">3</span>
-        <h3 class="instruction-title">Go to <i>your</i> Smartschool</h3>
+        <h3 class="instruction-title">{{ T `guide.go_to_your_smartschool` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-confetti"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h2" /><path d="M5 4v2" /><path d="M11.5 4l-.5 2" /><path d="M18 5h2" /><path d="M19 4v2" /><path d="M15 9l-1 1" /><path d="M18 13l2 -.5" /><path d="M18 19h2" /><path d="M19 18v2" /><path d="M14 16.518l-6.518 -6.518l-4.39 9.58a1 1 0 0 0 1.329 1.329l9.579 -4.39z" /></svg>
         </div>
         <p class="instruction-description">
-          Go to <i>your</i> Smartschool & refresh the page.
-          <b>Congratulation, your journey just started!</b>
+          {{ T `guide.instruction_go_to_smartschool` }}
         </p>
       </div>
     </div>
   </section>
   <section id="settings">
-    <h2>How to configure Settings</h2>
+    <h2>{{ T `guide.how_to_configure_settings` }}</h2>
     <div class="instruction-card" style="margin-right: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">1</span>
-        <h3 class="instruction-title">Open the Quick Settings</h3>
+        <h3 class="instruction-title">{{ T `guide.open_quick_settings` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
         </div>
         <p class="instruction-description">
-          Click the
-          <button
-            style="
-              height: 2.5rem;
-              line-height: initial;
-              text-decoration-thickness: 2px;
-              width: auto;
-              border: 2px solid var(--background);
-              box-shadow: 0px 0px 1rem -0.2rem var(--shadow-color);
-              border-radius: 50px;
-              background: var(--background);
-              font-size: 1.1rem;
-              display: inline-flex;
-              justify-content: center;
-              align-items: center;
-              padding: 0.25rem 1rem;
-              height: calc(100% - 0.5rem);
-              transform: translateY(-0.1rem);
-              color: var(--button);
-              font-weight: 800;
-            "
-            title="Ga in/uit edit mode om de locatie van de widgets te veranderen."
-          >
-            Settings
-          </button>
-          button <br />
-          in the top right
+          {{ T `guide.instruction_open_settings` }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-left: 20rem">
       <div class="instruction-card-top">
         <span class="instruction-number">2</span>
-        <h3 class="instruction-title">Choose a setting</h3>
+        <h3 class="instruction-title">{{ T `guide.choose_setting` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" /></svg>
         </div>
         <p class="instruction-description">
-          Try out some settings and watch <br />
-          them update in <i>real-time</i>
+          {{ T `guide.try_settings_realtime` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card">
       <div class="instruction-card-top">
         <span class="instruction-number">3</span>
-        <h3 class="instruction-title">Close the settings</h3>
+        <h3 class="instruction-title">{{ T `guide.close_settings` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" /><path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" /><path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" /><path d="M8.56 20.31a9 9 0 0 0 3.44 .69" /><path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" /><path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" /><path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" /><path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" /><path d="M14 14l-4 -4" /><path d="M10 14l4 -4" /></svg>
         </div>
         <p class="instruction-description">
-          Close the settings by clicking anywhere outside of the settings
+          {{ T `guide.close_settings_outside` }}
         </p>
       </div>
     </div>
   </section>
   <section id="widgets">
-    <h2>How to use Widgets</h2>
+    <h2>{{ T `guide.how_to_use_widgets` }}</h2>
     <div class="instruction-card" style="margin-right: 5rem">
       <div class="instruction-card-top">
         <span class="instruction-number">1</span>
-        <h3 class="instruction-title">Enter <b>edit</b> mode</h3>
+        <h3 class="instruction-title">{{ T `guide.enter_edit_mode` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
@@ -228,7 +200,7 @@
           </p>
         </div>
         <p class="instruction-description">
-          Click the edit button
+          {{ T `guide.click_edit_button` }}
           <button
             style="
               display: inline;
@@ -243,7 +215,7 @@
               border-radius: 50px;
               background: var(--background);
             "
-            title="Ga in/uit edit mode om de locatie van de widgets te veranderen."
+            title="{{ T `guide.edit_mode_tooltip` }}"
           >
             <div
               style="
@@ -293,161 +265,146 @@
             </div>
           </button>
           <br />
-          at the top left to enter
+          {{ T `guide.at_top_left_to_enter` }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-left: 20rem">
       <div class="instruction-card-top">
         <span class="instruction-number">2</span>
-        <h3 class="instruction-title">Open the drawer</h3>
+        <h3 class="instruction-title">{{ T `guide.open_drawer` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" /></svg>
         </div>
         <p class="instruction-description">
-          Open the drawer at the top to grab some widgets
+          {{ T `guide.open_drawer_top` }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-right: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">3</span>
-        <h3 class="instruction-title">Drop the <b>widgets</b></h3>
+        <h3 class="instruction-title">{{ T `guide.drop_widgets` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg>
         </div>
         <p class="instruction-description">
-          Place the widgets in existing panels or create new ones
+          {{ T `guide.place_widgets_panels` }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-left: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">4</span>
-        <h3 class="instruction-title">Stow them away</h3>
+        <h3 class="instruction-title">{{ T `guide.stow_away` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
         </div>
         <p class="instruction-description">
-          Store your widgets by <b>dropping</b> them <i>back</i> in the drawer
+          {{ T `guide.store_widgets_drawer` | html }}
         </p>
       </div>
     </div>
   </section>
   <section id="quick">
-    <h2>How to use Quick Menu</h2>
+    <h2>{{ T `guide.how_to_use_quick_menu` }}</h2>
     <div class="instruction-card" style="margin-left: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">1</span>
-        <h3 class="instruction-title">Open Quick with <kbd>:</kbd></h3>
+        <h3 class="instruction-title">{{ T `guide.open_quick_with_key` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bolt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" /></svg>
         </div>
         <p class="instruction-description">
-          Open the quick menu using <br />
-          the <kbd>:</kbd> key
+          {{ T `guide.open_quick_menu_key` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-right: 10rem">
       <div class="instruction-card-top">
         <span class="instruction-number">2</span>
-        <h3 class="instruction-title">Type it out!</h3>
+        <h3 class="instruction-title">{{ T `guide.type_it_out` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
         </div>
         <p class="instruction-description">
-          Look up any function in quick menu, for example "<code>planner</code>"
+          {{ T `guide.lookup_function_example` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-left: 5rem">
       <div class="instruction-card-top">
         <span class="instruction-number">3</span>
-        <h3 class="instruction-title">Navigate the menu</h3>
+        <h3 class="instruction-title">{{ T `guide.navigate_menu` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-keyboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 6m0 2a2 2 0 0 1 2 -2h16a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-16a2 2 0 0 1 -2 -2z" /><path d="M6 10l0 .01" /><path d="M10 10l0 .01" /><path d="M14 10l0 .01" /><path d="M18 10l0 .01" /><path d="M6 14l0 .01" /><path d="M18 14l0 .01" /><path d="M10 14l4 .01" /></svg>
         </div>
         <p class="instruction-description">
-          Use <kbd>Tab</kbd> to navigate and <kbd>Enter</kbd> to confirm your
-          choice
+          {{ T `guide.tab_enter_navigation` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card" style="margin-right: 5rem">
       <div class="instruction-card-top">
         <span class="instruction-number">4</span>
-        <h3 class="instruction-title">Save your own Quicks</h3>
+        <h3 class="instruction-title">{{ T `guide.save_quicks` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-location-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.361 9.308" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
         </div>
         <p class="instruction-description">
-          Use "<code>quick add</code>" to save a shortcut. Enter a
-          <code>name</code>: (eg. <i style="font-weight: 600">google</i>), then
-          a <code>value</code> <i>(URL)</i>: (e.g.
-          <i style="font-weight: 600">https://google.com</i>)
+          {{ T `guide.quick_add_shortcut` | html }}
         </p>
       </div>
     </div>
   </section>
   <section id="faq">
-    <h2>Frequently Asked Questions</h2>
+    <h2>{{ T `guide.frequently_asked_questions` }}</h2>
     <div class="instruction-card faq-card">
       <div class="instruction-card-top">
         <span class="instruction-number">?</span>
-        <h3 class="instruction-title">How do I change my weather location?</h3>
+        <h3 class="instruction-title">{{ T `guide.change_weather_location` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-haze"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1" /><path d="M12 3v1" /><path d="M20 12h1" /><path d="M5.6 5.6l.7 .7" /><path d="M18.4 5.6l-.7 .7" /><path d="M8 12a4 4 0 1 1 8 0" /><path d="M3 16h18" /><path d="M3 20h18" /></svg>
         </div>
         <p class="instruction-description">
-          Click on the current location in the widget and type out
-          <i>your own</i>
-          location.
+          {{ T `guide.click_location_widget` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card faq-card">
       <div class="instruction-card-top">
         <span class="instruction-number">?</span>
-        <h3 class="instruction-title">Why can't I install it?</h3>
+        <h3 class="instruction-title">{{ T `guide.why_cant_install` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shield-cancel"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.277 20.925c-.092 .026 -.184 .051 -.277 .075a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 .145 6.232" /><path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M17 21l4 -4" /></svg>
         </div>
         <p class="instruction-description">
-          On school laptops or school <i>wifi</i>, it might be <b>blocked</b>.
-          Try a different browser or use
-          <a
-            href="https://chromewebstore.google.com/detail/smartschool++-lite/dogkhghdahlgebhojaaoijdcadmebkcg"
-            target="_blank"
-            >Lite</a
-          >.
+          {{ T `guide.school_blocked` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card faq-card">
       <div class="instruction-card-top">
         <span class="instruction-number">?</span>
-        <h3 class="instruction-title">
-          Can I use Smarter/Smartest Smartschool?
-        </h3>
+        <h3 class="instruction-title">{{ T `guide.use_smarter_smartest` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
@@ -460,49 +417,28 @@
           </p>
         </div>
         <p class="instruction-description">
-          Yes, both
-          <a
-            href="https://chromewebstore.google.com/detail/smarter-smartschool/lbpdknjafmmnemenflppkofaakldbfom"
-            target="_blank"
-            >Smarter Smartschool</a
-          >
-          and <br />
-          <a
-            href="https://chromewebstore.google.com/detail/smartest-smartschool/hamjjkjpoeaomembdbcfegkmblbocgke"
-            target="_blank"
-            >Smartest Smartschool</a
-          >
-          are compatible<br />
-          But don't forget to disable the <i>Smarter</i> themes
+          {{ T `guide.smarter_compatible` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card faq-card">
       <div class="instruction-card-top">
         <span class="instruction-number">?</span>
-        <h3 class="instruction-title">On which browsers can I install?</h3>
+        <h3 class="instruction-title">{{ T `guide.which_browsers` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
           <svg class="instruction-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-firefox"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.028 7.82a9 9 0 1 0 12.823 -3.4c-1.636 -1.02 -3.064 -1.02 -4.851 -1.02h-1.647" /><path d="M4.914 9.485c-1.756 -1.569 -.805 -5.38 .109 -6.17c.086 .896 .585 1.208 1.111 1.685c.88 -.275 1.313 -.282 1.867 0c.82 -.91 1.694 -2.354 2.628 -2.093c-1.082 1.741 -.07 3.733 1.371 4.173c-.17 .975 -1.484 1.913 -2.76 2.686c-1.296 .938 -.722 1.85 0 2.234c.949 .506 3.611 -1 4.545 .354c-1.698 .102 -1.536 3.107 -3.983 2.727c2.523 .957 4.345 .462 5.458 -.34c1.965 -1.52 2.879 -3.542 2.879 -5.557c-.014 -1.398 .194 -2.695 -1.26 -4.75" /></svg>
         </div>
         <p class="instruction-description">
-          You can use any
-          <a
-            href="https://alternativeto.net/category/browsers/chromium-based/"
-            target="_blank"
-            >Chromium</a
-          >
-          based browser like Opera or Edge. <b>Firefox</b> users can follow our
-          guide on
-          <a href="https://discord.gg/qCHZYepDqZ" target="_blank">Discord</a>.
+          {{ T `guide.chromium_browsers` | html }}
         </p>
       </div>
     </div>
     <div class="instruction-card faq-card">
       <div class="instruction-card-top">
         <span class="instruction-number">?</span>
-        <h3 class="instruction-title">Other questions?</h3>
+        <h3 class="instruction-title">{{ T `guide.other_questions` }}</h3>
       </div>
       <div class="instruction-card-bottom">
         <div class="instruction-card-icon">
@@ -511,13 +447,11 @@
           </p>
         </div>
         <p class="instruction-description">
-          You can reach out in our <i>official</i> Smartschool++
-          <a href="https://discord.gg/qCHZYepDqZ" target="_blank">Discord</a>
-          server.
+          {{ T `guide.official_discord` | html }}
         </p>
       </div>
     </div>
   </section>
 </div>
-<div id="toast" class="toast">Copied to clipboard!</div>
+<div id="toast" class="toast">{{ T `ui.copied_to_clipboard` }}</div>
 {{end}}

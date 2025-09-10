@@ -75,3 +75,55 @@ takeOffButton.addEventListener("mouseenter", () => {
   takeOffText.style.animation = "take-off-text 1s 0.25s";
   takeOffIcon.style.animation = "take-off 2s";
 });
+
+// Language toggle functionality - More robust version
+document.addEventListener('DOMContentLoaded', function() {
+  const languageToggle = document.getElementById('language-toggle');
+  
+  if (languageToggle) {
+    // Remove any existing event listeners to prevent duplicates
+    languageToggle.removeEventListener('click', handleLanguageToggle);
+    
+    // Add the click handler
+    languageToggle.addEventListener('click', handleLanguageToggle);
+    
+    // Keyboard support
+    languageToggle.removeEventListener('keydown', handleLanguageKeydown);
+    languageToggle.addEventListener('keydown', handleLanguageKeydown);
+  }
+});
+
+function handleLanguageToggle(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  const currentLang = this.getAttribute('data-current-lang');
+  const targetUrl = currentLang === 'en' ? this.getAttribute('data-nl-url') : this.getAttribute('data-en-url');
+  
+  if (targetUrl && targetUrl !== '#') {
+    // Add a small delay to show the button press animation
+    this.style.transform = 'scale(0.95)';
+    
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, 150);
+  }
+}
+
+function handleLanguageKeydown(event) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    handleLanguageToggle.call(this, event);
+  }
+}
+
+// Also try to bind the language toggle immediately in case DOMContentLoaded already fired
+setTimeout(function() {
+  const languageToggle = document.getElementById('language-toggle');
+  if (languageToggle && !languageToggle.hasAttribute('data-listener-bound')) {
+    languageToggle.addEventListener('click', handleLanguageToggle);
+    languageToggle.addEventListener('keydown', handleLanguageKeydown);
+    languageToggle.setAttribute('data-listener-bound', 'true');
+  }
+}, 100);
+
