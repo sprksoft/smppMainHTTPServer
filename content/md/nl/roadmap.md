@@ -36,9 +36,9 @@ IMG /media/backgroundMatchaGreen.jpg
 
 # Niet Gepland ❌
 
-## Results Grid 🪟
+## Resultaten grid 🪟
 
-_Already fully compatible_ with **Smarter** & **Smartest Smartschool**.
+_Nu al volledig compatibel_ met **Smarter** & **Smartest Smartschool**.
 
 ## Mobiele App 📱
 
