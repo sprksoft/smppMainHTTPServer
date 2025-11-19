@@ -136,10 +136,11 @@ main {
   overflow: hidden;
   height: 5rem;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px -20px var(--highlight-shadow-color);
 }
 
 .try-now-button:hover {
-  box-shadow: 0 0 40px 7px var(--highlight-shadow-color);
+  box-shadow: 0 0 100px -10px var(--highlight-shadow-color);
   scale: 1.02;
   z-index: 1;
   text-decoration: none;
@@ -355,13 +356,13 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
 }
 
 #clock-container {
-  width: 400px;
+  width: 22rem;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 #preview-prod-description {
-  width: 800px;
+  width: 44rem;
   font-size: 2rem;
   padding-top: 2rem;
   font-weight: 500;
@@ -534,7 +535,7 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
 }
 
 #preview-prod-img {
-  width: 800px;
+  width: 44rem;
   height: 100%;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
@@ -553,7 +554,7 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
 }
 
 #prod-preview-wrapper {
-  height: 640px;
+  height: 575px;
 }
 
 #clock-title-mobile {
@@ -572,7 +573,7 @@ html:has(.preview-img-container.ready #fluorescentGalaxy) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1250px;
+  width: 70rem;
   gap: 2rem;
 }
 

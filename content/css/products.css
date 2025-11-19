@@ -23,11 +23,21 @@
   width: 22.5rem;
   border-radius: 3rem;
   box-shadow: 0px 0px 40px 10px var(--shadow-color);
-  transition: all 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .smpp-logo-big:hover {
-  transform: scale(1.05);
+  animation: cool-hover-bloop 0.4s cubic-bezier(0.2, 0.01, 0, 1.48) 0ms 1
+    forwards;
+}
+
+@keyframes cool-hover-bloop {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.075);
+  }
 }
 
 #smpp-main-logo-big:hover {

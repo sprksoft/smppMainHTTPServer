@@ -20,7 +20,7 @@ html {
   box-shadow: 0px 0px 50px 5px var(--shadow-color);
   background-color: var(--transparent-background);
   padding: 1.5rem;
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
   border-top-right-radius: 1.75rem;
   border-bottom-right-radius: 1.75rem;
 }
