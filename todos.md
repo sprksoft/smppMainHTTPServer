@@ -3,15 +3,15 @@
 ## 🚀 Getting Started
 
 - [x] Products
-- [ ] Quick Start Guide
-- [ ] Roadmap
+- [x] Quick Start Guide
+- [x] Roadmap
 
 ## 🌐 Resources
 
 - [x] GitHub
 - [x] Discord
-- [ ] Release Notes
-- [ ] About Us
+- [x] Release Notes
+- [x] About Us
 
 # Features Checklist
 
@@ -22,13 +22,13 @@
 - [x] Title
 - [x] Try now button
 - [ ] Key points
-  - [ ] Entertainment
-  - [ ] Productivity
+  - [x] Entertainment
+  - [x] Productivity
   - [ ] Open source
   - [ ] Community
-  - [ ] personalization
-- [ ] Theme tester
+  - [x] personalization
+- [x] Theme tester
 
 # Roadmap
 
-- [ ] Make roadmap
+- [x] Make roadmap
