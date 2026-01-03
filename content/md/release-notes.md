@@ -1,3 +1,22 @@
+# 5.0.0
+
+## New ✨
+
+- **Settings** window ⚙️
+- **Pong++** 🎮
+- **Tetris++** 🎮
+
+## Updates 🚀
+
+- **Settings** system is cleaner ⚙️
+- **Unique locations** for each weather widget 🌤️
+- **Major UI** improvements 🎨
+- **Assignment** widget 📝
+
+## Reworks 🛠️
+
+- **Settings** backend ⚙️
+
 # 4.0.0
 
 ## New ✨

@@ -1,10 +1,11 @@
 # Roadmap
 
-## dark Settings Update ⚙️
+## dark Theme Update 🎨
 
-IMG /media/backgroundDefaultDeluxe.webp  
-**Expanded** settings panel for _currently fixed_ customisation options  
-**_More control_** over all features
+IMG /media/backgroundCherryHaze.webp  
+**Fresh themes** + **_user-submitted_** designs in a **revamped UI**  
+Save **_multiple_** custom themes (_switch seamlessly_)  
+**Gradient** backgrounds
 
 ## dark Global Chat Update 2 🌐
 
@@ -12,13 +13,6 @@ IMG /media/backgroundDarkSands.webp
 Plant sticker — show off your plant to everyone
 Replying to messages
 Auto complete for stickers
-
-## dark Theme Update 🎨
-
-IMG /media/backgroundCherryHaze.webp  
-**Fresh themes** + **_user-submitted_** designs in a **revamped UI**  
-Save **_multiple_** custom themes (_switch seamlessly_)  
-**Gradient** backgrounds
 
 ## dark Profile personalization Update 🪪
 
