@@ -1,3 +1,22 @@
+# 5.0.0
+
+## Nieuw ✨
+
+- **Instellingen** venster ⚙️
+- **Pong++** 🎮
+- **Tetris++** 🎮
+
+## Updates 🚀
+
+- **Instellingen** systeem is schoner ⚙️
+- **Unieke locaties** voor elke weerwidget 🌤️
+- **Grote UI** verbeteringen 🎨
+- **Opdracht** widget 📝
+
+## Herwerkt 🛠️
+
+- **Instellingen** backend ⚙️
+
 # 4.0.0
 
 ## Nieuw ✨

@@ -1,17 +1,4 @@
-# Routekaart
-
-## dark Settings Update ⚙️
-
-IMG /media/backgroundDefaultDeluxe.jpg  
-**Uitgebreid** instellingenpaneel voor _momenteel vaste_ aanpassingsopties  
-**_Meer controle_** over alle functies
-
-## dark Global Chat Update 2 🌐
-
-IMG /media/backgroundDarkSands.jpg
-Plant sticker — laat je plant aan iedereen zien
-Beantwoorden van berichten
-Automatisch aanvullen voor stickers
+# Toekomst
 
 ## dark Theme Update 🎨
 
@@ -19,6 +6,13 @@ IMG /media/backgroundCherryHaze.jpg
 **Verse thema's** + **_door gebruikers ingediende_** ontwerpen in een **vernieuwdde UI**  
 Sla **_meerdere_** aangepaste thema's op (_wissel naadloos_)  
 **Gradiënt** achtergronden
+
+## dark Global Chat Update 2 🌐
+
+IMG /media/backgroundDarkSands.jpg
+Plant sticker — laat je plant aan iedereen zien
+Beantwoorden van berichten
+Automatisch aanvullen voor stickers
 
 ## dark Profiel personalisatie Update 🪪
 
