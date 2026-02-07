@@ -562,11 +562,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span class="copy-right">{{ Localize "footer_copyright" }}</span>
+        <span class="copy-right" id="copyrightText">© XXXX Smartschool++ — Built with ❤️</span>
       </div>
     </footer>
 
     <script>
+      copyright=document.getElementById("copyrightText")
+      copyright.innerText= "© "+new Date().getFullYear+   " Smartschool++ - Built with ❤️"
       function setLanguage(lang, redirect) {
         document.cookie = `lang=${lang}; path=/; max-age=31536000`;
         window.location.href = redirect;
