@@ -1,11 +1,11 @@
 # Toekomst
 
-## dark Theme Update 🎨
+## dark Plant Update 🪴
 
-IMG /media/backgroundCherryHaze.jpg  
-**Verse thema's** + **_door gebruikers ingediende_** ontwerpen in een **vernieuwdde UI**  
-Sla **_meerdere_** aangepaste thema's op (_wissel naadloos_)  
-**Gradiënt** achtergronden
+IMG /media/backgroundMatchaGreen.jpg  
+**Nieuwe planten** _ontgrendelbaar_ door groeivoortgang  
+**_Seizoensgebonden_** decoraties (bijv. _paaseieren, kerstverlichting_)  
+**Automatisch water geven** als het _regent_ (_geen vergeetachtigheid meer!_)
 
 ## dark Global Chat Update 2 🌐
 
@@ -19,14 +19,6 @@ Automatisch aanvullen voor stickers
 IMG /media/backgroundFluorescentGalaxy.jpg  
 **Druk jezelf uit** met **_aangepaste_** profielfoto's  
 **Kies** je eigen _stijl_ en kleuren
-
-## dark Plant Update 🪴
-
-IMG /media/backgroundMatchaGreen.jpg  
-**Nieuwe planten** _ontgrendelbaar_ door groeivoortgang  
-**Geef je plant een naam** (_geef het persoonlijkheid!_)  
-**_Seizoensgebonden_** decoraties (bijv. _paaseieren, kerstverlichting_)  
-**Automatisch water geven** als het _regent_ (_geen vergeetachtigheid meer!_)
 
 # Niet Gepland ❌
 

@@ -1,11 +1,11 @@
 # Roadmap
 
-## dark Theme Update 🎨
+## dark Plant Update 🪴
 
-IMG /media/backgroundCherryHaze.webp  
-**Fresh themes** + **_user-submitted_** designs in a **revamped UI**  
-Save **_multiple_** custom themes (_switch seamlessly_)  
-**Gradient** backgrounds
+IMG /media/backgroundMatchaGreen.webp  
+**New plants** _unlockable_ by growth progress  
+**_Seasonal_** decorations (e.g., _Easter eggs, Christmas lights_)  
+**Auto-watering** when it _rains_
 
 ## dark Global Chat Update 2 🌐
 
@@ -19,14 +19,6 @@ Auto complete for stickers
 IMG /media/backgroundFluorescentGalaxy.webp  
 **Express yourself** with **_custom_** profile pictures  
 **Choose** your own _style_ and colours
-
-## dark Plant Update 🪴
-
-IMG /media/backgroundMatchaGreen.webp  
-**New plants** _unlockable_ by growth progress  
-**Name your plant** (_give it personality!_)  
-**_Seasonal_** decorations (e.g., _Easter eggs, Christmas lights_)  
-**Auto-watering** when it _rains_ (_no more forgetfulness!_)
 
 # Not Happening ❌
 

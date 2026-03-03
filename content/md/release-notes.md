@@ -1,3 +1,24 @@
+# 6.0.0
+
+## New ✨
+
+- More than **20 new themes** 🎨
+- Create multiple **Custom Themes**
+- **Auto generate** your own theme
+- **Share** your creations 🌐
+- Glass Style 🪟
+
+## Updates 🚀
+
+- **Quick Settings** theme picker ⚙️
+- **Major UI** improvements (again) 🎨
+- Some older themes were updated ✏️
+
+## Reworks 🔧
+
+- **Images** backend ⚙️
+- **Theme** backend 🎨
+
 # 5.0.0
 
 ## New ✨

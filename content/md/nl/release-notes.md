@@ -1,3 +1,24 @@
+# 6.0.0
+
+## Nieuw ✨
+
+- Meer dan **20 nieuwe thema's** 🎨
+- Maak meerdere **Aangepaste Thema's**
+- **Genereer** je eigen thema automatisch
+- **Deel** je creaties 🌐
+- Glas Stijl 🪟
+
+## Updates 🚀
+
+- **Snelle Instellingen** themakiezer ⚙️
+- **Grote UI**-verbeteringen (opnieuw) 🎨
+- Enkele oudere thema's werden bijgewerkt ✏️
+
+## Herwerkt 🔧
+
+- **Afbeeldingen** backend ⚙️
+- **Thema** backend 🎨
+
 # 5.0.0
 
 ## Nieuw ✨
