@@ -48,3 +48,7 @@ We paid a visit to the **Smartschool headquarters** — a memorable day filled w
 
 ICO 🏞️  
 We launched our official site — a new place for everything about **Smartschool++**.
+
+## Late 2026
+ICO 🚂 
+We launched many new features with the biggest one being the NMBS widget and promoted two developers to developer coordinators

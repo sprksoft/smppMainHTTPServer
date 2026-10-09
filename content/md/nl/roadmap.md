@@ -22,10 +22,6 @@ IMG /media/backgroundFluorescentGalaxy.jpg
 
 # Niet Gepland ❌
 
-## Resultaten grid 🪟
-
-_Nu al volledig compatibel_ met **Smarter** & **Smartest Smartschool**.
-
 ## Mobiele App 📱
 
 **_Maanden tot jaren_** ontwikkelingstijd + **_extra kosten_** = **niet haalbaar** 💵

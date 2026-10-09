@@ -48,3 +48,7 @@ We brachten een bezoek aan het **Smartschool hoofdkantoor** — een memorabele d
 
 ICO 🏞️  
 We lanceerden onze officiële site — een nieuwe plek voor alles over **Smartschool++**.
+
+## Late 2026
+ICO 🚂 
+we lanceerden veel nieuwe features en widgets met de als parel de NMBS widget en promoveerden twee nieuwe developers naar developer coordinator.
